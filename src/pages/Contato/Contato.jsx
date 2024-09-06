@@ -1,10 +1,8 @@
-import styles from "./Contato.module.css"
-import { Menu } from "../../components/Menu/Menu"
+
 
 export function Contato(){
     return (
-        <div className={styles.Contato}>
-            <Menu />
+        <div className="flex bg-red-200">
             <p>Contato</p>
         </div>
     )
