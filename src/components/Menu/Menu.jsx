@@ -1,4 +1,4 @@
-import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft } from "@tabler/icons-react";
+import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export function Menu() {
@@ -7,8 +7,8 @@ export function Menu() {
     const getEstilo = (props) => {
    
         let estilo =
-          "flex gap-3 text-slate-700 px-3 py-4 hover:bg-slate-800 hover:text-slate-200 ";
-        let ativo = "border-r-4 border-solid border-slate-800 "
+          "flex gap-3 text-red-950 px-3 py-4 hover:bg-red-800 hover:text-slate-200 ";
+        let ativo = "border-r-4 border-solid border-red-950 "
     
     
         let final = props.isActive ? estilo + ativo : estilo
@@ -41,8 +41,23 @@ export function Menu() {
                     </NavLink>
 
                 <NavLink to="/estado1" className={getEstilo}>
-                    <IconInfoCircle/>
+                    <IconSquareRoundedNumber1/>
                     Estado 1
+                    </NavLink>
+
+                <NavLink to="/comEstado" className={getEstilo}>
+                    <IconSquareRoundedNumber2/>
+                    Com Estado
+                    </NavLink>
+
+                <NavLink to="/campoTexto" className={getEstilo}>
+                    <IconSquareRoundedNumber3/>
+                    Campo Texto
+                    </NavLink>
+
+                <NavLink to="/contador" className={getEstilo}>
+                    <IconSquareRoundedNumber4/>
+                    Contador
                     </NavLink>
             </nav>
 
