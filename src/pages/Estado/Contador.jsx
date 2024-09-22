@@ -5,12 +5,12 @@ export function Contador() {
     const [numero, setNumero] = useState(0)
     const [step, setStep] = useState(0)
 
-    function incrementar(setStep,step) {
-        setNumero(numero + step.setStep)
+    function incrementar() {
+        setNumero(numero + step)
     }
 
     function retirar(){
-        setNumero(numero - setStep.step)
+        setNumero(numero - step)
     }
 
     function incrementaStep(){
@@ -25,23 +25,25 @@ export function Contador() {
     // }
 
     return (
-        <Pagina titulo="Comtador" subtitulo="conceito de contador de números">
+        <Pagina titulo="Contador" subtitulo="conceito de contador de números">
             <div className="flex flex-col">
-                <div>{numero}</div>
-                <button onClick={retirar} className="p-2 bg-red-500 rounded-md w-20">
+                <div className="rounded-md border-2 p-2 h-11 w-14 mb-5">{numero}</div>
+                <div className="flex flex-row justify-between w-24">
+                <button onClick={retirar} className="p-2 bg-red-500 rounded-md w-10">
                     -</button>
-                <button onClick={incrementar} className="p-2 bg-red-500 rounded-md w-20">
+                <button onClick={incrementar} className="p-2 bg-red-500 rounded-md w-10">
                     +</button>
+                </div>
+
                 <br />
                 <span>step</span>
+
+                <div className="flex flex-row justify-between w-28">
                 <button onClick={retiraStep} className="p-2 bg-red-500 rounded-full w-10">-</button>
-                <div>{step}</div>
+                <div className="p-2">{step}</div>
                 <button onClick={incrementaStep} className="p-2 bg-red-500 rounded-full w-10">+</button>
+                </div>
 
-                
-
-
-                
             </div>
 
             {/* <div>
