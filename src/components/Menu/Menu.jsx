@@ -1,4 +1,4 @@
-import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
+import { IconAddressBook, IconHome, IconInfoCircle, IconMessage, IconMessageDown, IconMessageUp, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export function Menu() {
@@ -58,6 +58,16 @@ export function Menu() {
                 <NavLink to="/contador" className={getEstilo}>
                     <IconSquareRoundedNumber4/>
                     Contador
+                    </NavLink>
+
+                <NavLink to="/comunicacao-direta" className={getEstilo}>
+                    <IconMessageDown/>
+                    Comunicacao direta
+                    </NavLink>
+
+                <NavLink to="/comunicacao-indireta" className={getEstilo}>
+                    <IconMessageUp/>
+                    Comunicacao indireta
                     </NavLink>
             </nav>
 
