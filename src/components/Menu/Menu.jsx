@@ -69,6 +69,16 @@ export function Menu() {
                     <IconMessageUp/>
                     Comunicacao indireta
                     </NavLink>
+
+                <NavLink to="/UseRef" className={getEstilo}>
+                    <IconMessageUp/>
+                    UseRef
+                    </NavLink>
+
+                <NavLink to="/UseEffect" className={getEstilo}>
+                    <IconMessageUp/>
+                    UseEffect
+                    </NavLink>
             </nav>
 
             <footer className="absolute bottom-0 p-3 text-sm">
