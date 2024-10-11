@@ -79,6 +79,11 @@ export function Menu() {
                     <IconMessageUp/>
                     UseEffect
                     </NavLink>
+
+                <NavLink to="/tradutor" className={getEstilo}>
+                    <IconMessageUp/>
+                    Tradutor
+                    </NavLink>
             </nav>
 
             <footer className="absolute bottom-0 p-3 text-sm">
