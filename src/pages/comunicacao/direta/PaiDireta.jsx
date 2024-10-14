@@ -7,7 +7,7 @@ export function PaiDireta(){
 
     function alterarNome(novoNome){
         setNome(novoNome)
-    }
+    } 
 
     return(
         <div className={`

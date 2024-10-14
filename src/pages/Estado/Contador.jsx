@@ -38,7 +38,7 @@ export function Contador() {
                 <br />
                 <span>step</span>
 
-                <div className="flex flex-row justify-between w-28">
+                <div className="flex flex-row justify-between w-28j">
                 <button onClick={retiraStep} className="p-2 bg-red-500 rounded-full w-10">-</button>
                 <div className="p-2">{step}</div>
                 <button onClick={incrementaStep} className="p-2 bg-red-500 rounded-full w-10">+</button>
